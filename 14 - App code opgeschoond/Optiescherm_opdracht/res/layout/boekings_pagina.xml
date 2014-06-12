@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="0"
+    android:id="@id/mainlayout">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Persoonlijke gegevens"
+        android:id="@+id/textView"
+        android:layout_weight="0.17"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naam:"
+            android:id="@+id/naam"
+            android:textSize="20dp"
+            android:layout_weight="0.20"
+            android:singleLine="true"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="47dp"
+            android:id="@+id/naaminvoer"
+            android:hint="Naam"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.65"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adres:"
+            android:id="@+id/adres"
+            android:textSize="20dp"
+            android:layout_weight="0.20"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Straatnaam + huisnummer"
+            android:id="@+id/adresinvoer"
+            android:layout_weight="0.60"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telnmr:"
+            android:id="@+id/textView4"
+            android:textSize="20dp"
+            android:layout_weight="0.20"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Telefoonnummer"
+            android:id="@+id/telefooninvoer"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.90"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:id="@+id/textView2"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:layout_weight="0.20"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailinvoerr"
+            android:hint="E-mail"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_weight="0.68"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Boekings gegevens"
+        android:id="@+id/textView3"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotelnaam:"
+            android:id="@+id/textView5"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotelnaaminvoer"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aantal Personen:"
+            android:id="@+id/textView6"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aantalpersonen"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Boek"
+            android:id="@+id/boekButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Annuleer"
+            android:id="@+id/AnnuleerButtonBoek"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
