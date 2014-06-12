@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8d00"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="215dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#333333"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="PIE4ALL"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:phoneNumber="false"
+            android:layout_weight="1.04" />
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="74dp"
+            android:src="@drawable/images"
+            android:background="#e8e2df"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welkomtekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Welkom terug taarteneter"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/geopendtekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="U heeft deze applicatie al 1 keer geopend."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/Button01Parijs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Parijs"
+            android:onClick= "parijs"
+
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/button02REY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="reykjavik"
+            android:text="reykjavik" />
+
+        <Button
+            android:id="@+id/button03BER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="berlijn"
+            android:text="berlijn" />
+
+        <Button
+            android:id="@+id/button04AMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="amsterdam"
+            android:text="amsterdam" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id= "@id/android:list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
+
+</LinearLayout>
